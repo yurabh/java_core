@@ -1,2 +1,0 @@
-Product 1 : Milk
-Product  2: Butter
