@@ -12,7 +12,7 @@ public class Encryption {
 
         sc.nextLine();
 
-        String filePath = "D:/yura.txt";
+        String filePath = "Users.txt";
 
         String tempLine;
 
