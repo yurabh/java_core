@@ -7,6 +7,7 @@ public class DoubleNumbers extends WorkGeneric<Double> {
     @Override
     public void insertIntoSort() {
         Double temp;
+
         int j;
         int length = numberList.size();
         for (int i = 0; i < length - 1; i++) {
