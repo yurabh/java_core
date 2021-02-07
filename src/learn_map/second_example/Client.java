@@ -1,19 +1,20 @@
-package homeWork46;
+package learn_map.second_example;
 
 import java.util.Objects;
 
 public class Client implements Comparable<Client> {
-    private String Name;
-    private String SurName;
+
+    private String name;
+    private String surName;
 
     public Client(String name, String surName) {
-        Name = name;
-        SurName = surName;
+        this.name = name;
+        this.surName = surName;
     }
 
     public void showKey() {
-        System.out.println("Name: " + Name);
-        System.out.println("SurName: " + SurName);
+        System.out.println("name: " + name);
+        System.out.println("surName: " + surName);
     }
 
     @Override
@@ -21,23 +22,23 @@ public class Client implements Comparable<Client> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Client client = (Client) o;
-        return Objects.equals(Name, client.Name) &&
-                Objects.equals(SurName, client.SurName);
+        return Objects.equals(name, client.name) &&
+                Objects.equals(surName, client.surName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Name, SurName);
+        return Objects.hash(name, surName);
     }
 
     @Override
     public String toString() {
-        return " Name: " + Name + "-> SurName: " + SurName + '\n';
+        return " name: " + name + "-> surName: " + surName + '\n';
     }
 
     @Override
     public int compareTo(Client o) {
-        if (Name.equals(o.Name) && SurName.equals(o.SurName))
+        if (name.equals(o.name) && surName.equals(o.surName))
             return 0;
         return -1;
     }

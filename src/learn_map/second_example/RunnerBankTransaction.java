@@ -1,4 +1,4 @@
-package homeWork46;
+package learn_map.second_example;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ public class RunnerBankTransaction {
 
     public static void main(String[] args) {
 
-        Client key = new Client("aura", "aahlay");
+        Client key = new Client("yura", "bahlay");
 
         Client key1 = new Client("bolik", "bnegerjov");
 
@@ -67,7 +67,7 @@ public class RunnerBankTransaction {
 
         System.out.println("Size: " + transactionBank.size());
 
-        System.out.println("Hash Cod: " + transactionBank.hashCode());
+        System.out.println("HashCode: " + transactionBank.hashCode());
 
         System.out.println("IsEmpty: " + transactionBank.isEmpty());
 
@@ -81,21 +81,21 @@ public class RunnerBankTransaction {
 
         System.out.println("Contains Value: " + transactionBank.containsValue(transaction6));
 
-        Map<Client, BankTransaction> newTranzaction = new TreeMap<>();
+        Map<Client, BankTransaction> newTransaction = new TreeMap<>();
 
-        System.out.println("Equals: " + transactionBank.equals(newTranzaction));
+        System.out.println("Equals: " + transactionBank.equals(newTransaction));
 
         System.out.println("Equals: " + transactionBank.equals(transactionBank));
 
-        Client ki = new Client("sdsdf", "sfsfsf");
+        Client clientFour = new Client("sdsdf", "sfsfsf");
 
-        BankTransaction ob5 = transactionBank.get(ki);
+        BankTransaction ob5 = transactionBank.get(clientFour);
 
         System.out.println("GetKey: " + ob5);
 
-        Set<Client> kyes = transactionBank.keySet();
+        Set<Client> keys = transactionBank.keySet();
 
-        System.out.println("KeySet" + kyes);
+        System.out.println("KeySet" + keys);
 
         System.out.println(transactionBank.getOrDefault(key3, transaction6));
 
@@ -110,7 +110,6 @@ public class RunnerBankTransaction {
         System.out.println(ob1);
 
         Iterator<BankTransaction> it = ob1.iterator();
-
 
         while (it.hasNext()) {
             System.out.println(it.next());
@@ -155,9 +154,9 @@ public class RunnerBankTransaction {
 
         Set<Map.Entry<Client, BankTransaction>> ob = transactionBank.entrySet();
         for (Map.Entry<Client, BankTransaction> item : ob) {
-            Client keys = item.getKey();
+            Client keysOne = item.getKey();
             BankTransaction value = item.getValue();
-            keys.showKey();
+            keysOne.showKey();
             value.showTransaction();
             System.out.println(" ");
         }

@@ -1,13 +1,15 @@
-package homeWork46;
+package learn_map.second_example;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
 public class BankTransaction implements Comparable<BankTransaction> {
-    private ArrayList<LocalDate> dates = new ArrayList<>();
-    private ArrayList<Double> transaction = new ArrayList<>();
+
+    private List<LocalDate> dates = new ArrayList<>();
+    private List<Double> transaction = new ArrayList<>();
     private String address;
     private String numberCart;
     private double balance;
@@ -25,10 +27,9 @@ public class BankTransaction implements Comparable<BankTransaction> {
             if (this.balance > 0) {
                 dates.add(i, LocalDate.of(2018, 5, 12));
                 this.balance -= value;
-
                 transaction.add(i, value);
             } else {
-                System.out.println("Balanse < 0");
+                System.out.println("Balance < 0");
                 break;
             }
         }
@@ -36,7 +37,7 @@ public class BankTransaction implements Comparable<BankTransaction> {
 
     public void showTransaction() {
         System.out.println("Date: " + this.dates);
-        System.out.println("Transaction: " + transaction);
+        System.out.println("Transaction: " + this.transaction);
         System.out.println("CartNumber: " + this.numberCart);
         System.out.println("Address: " + this.address);
         System.out.println("Balance: " + this.balance);
