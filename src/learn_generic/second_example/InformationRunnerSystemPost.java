@@ -1,4 +1,4 @@
-package homeWork39.second_example;
+package learn_generic.second_example;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class InformationRunnerSystemPost {
 
         System.out.println();
         System.out.println("Вивід коробок зі складу");
-        Stock<Box> boxStock = new Stock<Box>(boxing);
+        Stock<Box> boxStock = new Stock<>(boxing);
         StockInformer.showBoxInfo(boxStock);
         System.out.println();
 

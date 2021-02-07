@@ -1,4 +1,4 @@
-package homeWork39.first_example;
+package learn_generic.first_example;
 
 import java.util.ArrayList;
 
@@ -19,10 +19,11 @@ public abstract class WorkGeneric<T extends Number> {
     public void removeElement() {
         int index = findElement();
         if (index != -1) {
-            System.out.println("Ми знайшли елемент і видаляем йього: " + numberList.get(index).toString());
+            System.out.println("Find element and remove it: "
+                    + numberList.get(index).toString());
             numberList.remove(index);
         } else {
-            System.out.println("Елемент не знайщовся для видалення");
+            System.out.println("could't find element");
         }
     }
 

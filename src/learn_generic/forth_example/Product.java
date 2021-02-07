@@ -1,9 +1,10 @@
-package homeWork39.lesson_41_Generick_Intarface;
+package learn_generic.forth_example;
 
-public class Order implements Identify<Integer> {
+public class Product implements Identify<Integer> {
+
     private int id;
 
-    public Order(int id) {
+    public Product(int id) {
         this.id = id;
     }
 
@@ -14,7 +15,7 @@ public class Order implements Identify<Integer> {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "Product{" +
                 "id=" + id +
                 '}';
     }

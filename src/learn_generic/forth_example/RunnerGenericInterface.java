@@ -1,4 +1,4 @@
-package homeWork39.lesson_41_Generick_Intarface;
+package learn_generic.forth_example;
 
 public class RunnerGenericInterface {
 

@@ -1,4 +1,4 @@
-package homeWork39.third_example;
+package learn_generic.third_example;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,8 +6,11 @@ import java.util.Random;
 public class RunnerMethodsGeneric {
 
     public static void main(String[] args) {
+
         ArrayList<Integer> integers = new ArrayList<>();
+
         Random random = new Random();
+
         int i = 0;
 
         while (i < 10) {

@@ -1,4 +1,4 @@
-package homeWork39.second_example;
+package learn_generic.second_example;
 
 public class StockInformer {
 

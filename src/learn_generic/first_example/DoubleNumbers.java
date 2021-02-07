@@ -1,4 +1,4 @@
-package homeWork39.first_example;
+package learn_generic.first_example;
 
 import java.util.Scanner;
 

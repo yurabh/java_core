@@ -1,4 +1,4 @@
-package homeWork39.lesson_39_40;
+package learn_generic.fifth_example;
 
 import java.util.ArrayList;
 
@@ -23,9 +23,7 @@ public class StuffList<T extends Number> {
         }
     }
 
-
     private double getAverage() {
-
         double sum = 0;
         for (T item : stuff) {
             sum += item.doubleValue();
@@ -33,16 +31,13 @@ public class StuffList<T extends Number> {
         return sum / stuff.size();
     }
 
-
     public boolean sameAverage(StuffList<?> list) {
-
         if (this.getAverage() == list.getAverage()) {
             return true;
         } else {
             return false;
         }
     }
-
 
     public void showInfo() {
         for (T item : stuff) {

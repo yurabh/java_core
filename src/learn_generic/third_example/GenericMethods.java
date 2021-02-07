@@ -1,4 +1,4 @@
-package homeWork39.third_example;
+package learn_generic.third_example;
 
 import java.util.ArrayList;
 
@@ -23,9 +23,9 @@ public class GenericMethods<T extends Comparable<T>> {
 
     static <T extends Number>
     void bubbleSort(ArrayList<T> ob) {
-        int langs = ob.size();
-        for (int i = 0; i < langs - 1; i++) {
-            for (int j = 0; j < langs - i - 1; j++) {
+        int length = ob.size();
+        for (int i = 0; i < length - 1; i++) {
+            for (int j = 0; j < length - i - 1; j++) {
                 int a;
                 if (ob.get(j).doubleValue() > ob.get(j + 1).doubleValue()) {
                     T temp = ob.get(j);

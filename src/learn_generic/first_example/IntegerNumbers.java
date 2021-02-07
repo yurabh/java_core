@@ -1,4 +1,4 @@
-package homeWork39.first_example;
+package learn_generic.first_example;
 
 import java.util.Scanner;
 
@@ -25,11 +25,11 @@ public class IntegerNumbers extends WorkGeneric<Integer> {
 
     protected int findElement() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введіть число яке ви шукаєте");
+        System.out.println("Enter number for searching: ");
         Integer value = sc.nextInt();
         for (int i = 0; i < numberList.size(); i++) {
             if (numberList.get(i).equals(value)) {
-                System.out.println("Ми знайщли елемент: " + numberList.get(i).toString());
+                System.out.println("Find number: " + numberList.get(i).toString());
                 System.out.println(" ");
                 return i;
             }

@@ -1,4 +1,4 @@
-package homeWork39.lesson_41_Generick_Intarface;
+package learn_generic.forth_example;
 
 import java.util.Random;
 
@@ -26,7 +26,7 @@ public class ProductList extends WorkWithGeneric<Product, Integer> {
 
     public Product find(Integer key) {
         for (int i = 0; i < numbersList.size(); i++) {
-            if (numbersList.get(i).getId() == key) {
+            if (numbersList.get(i).getId().equals(key)) {
                 System.out.print("Ми знайшли елемент: " + numbersList.get(i).toString());
                 System.out.println(" ");
                 return numbersList.get(i);

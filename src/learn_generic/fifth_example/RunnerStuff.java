@@ -1,8 +1,9 @@
-package homeWork39.lesson_39_40;
+package learn_generic.fifth_example;
 
 import java.util.ArrayList;
 
 public class RunnerStuff {
+
     public static void main(String[] args) {
 
         ArrayList<Integer> integers = new ArrayList<>();
