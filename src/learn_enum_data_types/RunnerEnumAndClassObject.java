@@ -1,6 +1,6 @@
 package learn_enum_data_types;
 
-import learn_inheritance_word_super_toString_equal_hashCode_umlDiagram_enam_polymorphism.*;
+import learn_inheritance_word_super_tostring_equal_hashcode_uml_diagram_enam_polymorphism.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
