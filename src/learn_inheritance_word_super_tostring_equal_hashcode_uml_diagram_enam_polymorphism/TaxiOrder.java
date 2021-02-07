@@ -1,4 +1,4 @@
-package learn_inheritance_word_super_toString_equal_hashCode_umlDiagram_enam_polymorphism;
+package learn_inheritance_word_super_tostring_equal_hashcode_uml_diagram_enam_polymorphism;
 
 public class TaxiOrder {
 
