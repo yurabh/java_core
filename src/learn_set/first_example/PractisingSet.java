@@ -1,4 +1,4 @@
-package learn_set;
+package learn_set.first_example;
 
 import java.util.*;
 

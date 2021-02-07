@@ -1,4 +1,4 @@
-package homeWork44;
+package learn_set.second_example;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,13 +10,11 @@ public class RunnerCounterWord {
 
     public static void main(String[] args) {
 
-        String filePath = "src/homeWork44/Games.txt";
+        String filePath = "src/learn_set/second_example/games_two.txt";
 
         String data = getData(filePath);
 
         System.out.println(data);
-
-        Set<String> words = getWords(data);
 
         NavigableSet<String> ob = new TreeSet<>();
 
@@ -24,7 +22,7 @@ public class RunnerCounterWord {
 
         NavigableSet<String> words1;
 
-        words1 = workWithMetodsNavigeblInterface(ob);
+        words1 = workWithMethodsNavigableInterface(ob);
 
         showSet(words1);
 
@@ -35,7 +33,8 @@ public class RunnerCounterWord {
         showSet(ob);
     }
 
-    private static int instructionForNavigeblMetod() {
+
+    private static int instructionForNavigableMethod() {
         Scanner sc = new Scanner(System.in);
         int value;
         do {
@@ -53,12 +52,14 @@ public class RunnerCounterWord {
         return value;
     }
 
-    public static NavigableSet<String> workWithMetodsNavigeblInterface(NavigableSet<String> words) {
+
+    public static NavigableSet<String> workWithMethodsNavigableInterface(
+            NavigableSet<String> words) {
         NavigableSet<String> wordsNew = new TreeSet<>();
         int value;
         System.out.println("All words those without * , ect: " + words.size());
 
-        value = instructionForNavigeblMetod();
+        value = instructionForNavigableMethod();
         if (value == 1) {
             System.out.println("All words those end is letter b -> end");
             wordsNew = words.tailSet("nature", true);
@@ -78,7 +79,8 @@ public class RunnerCounterWord {
         return wordsNew;
     }
 
-    private static int instructionForMetodsWhosReturbString() {
+
+    private static int instructionForMethodsWhoReturnByString() {
         Scanner sc = new Scanner(System.in);
         int value;
         do {
@@ -88,31 +90,32 @@ public class RunnerCounterWord {
             System.out.println("4: wordsReturned = wordsNew.lower(Banquet);");
             System.out.println("5: wordsReturned = wordsNew.pollFirst();");
             System.out.println("6: wordsReturned = wordsNew.pollLast();");
-            System.out.print("Зробіть вибір: ");
+            System.out.print("Make your choose: ");
             value = sc.nextInt();
             if (value < 0 || value > 8) {
-                System.out.println("Введіть ще раз не вірне введення");
+                System.out.println("Enter again please: ");
             }
         } while (value < 0 || value > 8);
         return value;
     }
 
+
     public static String workWithInterfaceMethodReturnString(NavigableSet<String> words) {
         int value;
         String wordsReturned = null;
         System.out.println("All words those without * , ect: " + words.size());
-        value = instructionForMetodsWhosReturbString();
+        value = instructionForMethodsWhoReturnByString();
         if (value == 1) {
-            System.out.println("Пошук елемента > Banquet");
+            System.out.println("Search element > Banquet");
             wordsReturned = words.higher("Banquet");
         } else if (value == 2) {
-            System.out.println("Пошук елемента >= Banquet");
+            System.out.println("Search element >= Banquet");
             wordsReturned = words.ceiling("Banquet");
         } else if (value == 3) {
-            System.out.println("Пошук елемента <= Banquet");
+            System.out.println("Search element <= Banquet");
             wordsReturned = words.floor("Banquet");
         } else if (value == 4) {
-            System.out.println("\"Пошук елемента < Banquet");
+            System.out.println("\"Search element < Banquet");
             wordsReturned = words.lower("Banquet");
         } else if (value == 5) {
             System.out.println("PollFirst elements in this TreeSet");
@@ -123,6 +126,7 @@ public class RunnerCounterWord {
         }
         return wordsReturned;
     }
+
 
     public static String getData(String path) {
         FileReader fileReader = null;
@@ -140,7 +144,7 @@ public class RunnerCounterWord {
             System.out.println("File " + path + " not found");
             e.printStackTrace();
         } catch (IOException e) {
-            System.out.println("Error while reading data from Niofile");
+            System.out.println("Error while reading data from ioFile");
             e.printStackTrace();
         } finally {
             try {
@@ -153,6 +157,7 @@ public class RunnerCounterWord {
         }
         return text.toString();
     }
+
 
     public static Set<String> getWords(String text) {
         Set<String> words = new TreeSet<>();
@@ -167,6 +172,7 @@ public class RunnerCounterWord {
         return words;
     }
 
+
     public static String clearWord(String word) {
         StringBuilder stringBuilder = new StringBuilder(word);
         for (int i = 0; i < stringBuilder.length(); i++) {
@@ -177,6 +183,7 @@ public class RunnerCounterWord {
         }
         return stringBuilder.toString();
     }
+
 
     public static void showSet(Set<String> stringSet) {
         Iterator<String> iterator = stringSet.iterator();
