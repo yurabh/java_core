@@ -1,4 +1,4 @@
-package learn_instanceOf_arrays_desing_uml_second_example;
+package learn_instanceof_arrays_desing_uml_second_example;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package learn_instanceOf_arrays_desing_uml_second_example;
+package learn_instanceof_arrays_desing_uml_second_example;
 
 public class TaxiOrder {
 
@@ -21,7 +21,7 @@ public class TaxiOrder {
     }
 
     public TaxiOrder(int id, Client client, int priceOfthetrip, String placeOfDeparture, String placeOfArrival,
-                     Payment payment, learn_instanceOf_arrays_desing_uml_second_example.Driver driver) {
+                     Payment payment, learn_instanceof_arrays_desing_uml_second_example.Driver driver) {
         this.id = id;
         this.client = client;
         this.priceOfTetrip = priceOfthetrip;
