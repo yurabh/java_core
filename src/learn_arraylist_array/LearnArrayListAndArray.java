@@ -1,7 +1,7 @@
-package learn_arrayList_array;
+package learn_arraylist_array;
 
-import learn_instanceOf_arrays_desing_uml_second_example.Client;
-import learn_instanceOf_arrays_desing_uml_second_example.Person;
+import learn_instanceof_arrays_desing_uml_second_example.Client;
+import learn_instanceof_arrays_desing_uml_second_example.Person;
 
 import java.util.ArrayList;
 
