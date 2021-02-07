@@ -1,4 +1,4 @@
-package learn_linkedList_linkedListInStack_stackInLinkedList;
+package learn_linkedlist_linkedlist_in_stack_stack_in_linkedlist_and_vector.first_example;
 
 public class Node {
     public int index;

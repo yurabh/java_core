@@ -1,6 +1,7 @@
-package learn_linkedList_linkedListInStack_stackInLinkedList;
+package learn_linkedlist_linkedlist_in_stack_stack_in_linkedlist_and_vector.first_example;
 
 public class Runner {
+
     public static void main(String[] args) {
 
         LinkedList someList = new LinkedList();
@@ -36,7 +37,7 @@ public class Runner {
         someList.displayList();
         someList.deleteFirst();
         Node nod = someList.find(12);
-        System.out.println("Вивід знайденого елемента");
+        System.out.println("show found element");
         nod.showNode();
         System.out.println();
         LinkedList someList1 = new LinkedList();
@@ -53,7 +54,7 @@ public class Runner {
         someList1.addNewAfterAllElements(93);
         someList1.displayList();
         System.out.println();
-        System.out.println("Beffore");
+        System.out.println("Before");
         someList1.addNewBeforeAllElements(121);
         someList1.displayList();
         someList1.addNewBeforeAllElements(9);
@@ -65,7 +66,6 @@ public class Runner {
         someList1.displayList();
 
 
-        //Лінкед ліст у стеку.
         Node node = new Node(1, 22.2);
         Node node1 = new Node(12, 22.2);
         Node node2 = new Node(13, 22.2);
@@ -85,7 +85,7 @@ public class Runner {
         linkedListinStack.push(node7);
         linkedListinStack.showLinkedListStack();
         linkedListinStack.showLinkedListStack();
-        System.out.println("Повертаем видалений");
+        System.out.println("get deleted");
         Node nodes = linkedListinStack.pop();
         nodes.showNode();
         Node nodes1 = linkedListinStack.pop();
@@ -97,7 +97,7 @@ public class Runner {
         Node nodes5 = linkedListinStack.pop();
         linkedListinStack.showLinkedListStack();
         Node object1 = linkedListinStack.peek();
-        System.out.println("Peelk povertaaem");
+        System.out.println("get peek");
         object1.showNode();
     }
 }
