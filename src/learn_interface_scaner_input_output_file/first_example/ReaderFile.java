@@ -10,7 +10,7 @@ public class ReaderFile implements IRead {
 
     public String readInformation() {
 
-        String filePath = "D:/yura.txt";
+        String filePath = "D:/games_two.txt";
         String objectString = null;
         BufferedReader bufferedReader = null;
         FileReader fileReader = null;
